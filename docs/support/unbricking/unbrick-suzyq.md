@@ -88,16 +88,13 @@ Now the firmware image is ready to be flashed, and will maintain the device's un
 Now that everything is prepped, time to flash the device.
 
 1. Flash the firmware:
-   * If flashing your own backup created by the Firmware Utility Script (or any backup made from a live system), use
-     * `sudo flashrom -p raiden_debug_spi:target=AP -i SI_BIOS -w <filename>`
-   * Otherwise, if using a UEFI Full ROM image or shellball/recovery-extracted image, use
-     * `sudo flashrom -p raiden_debug_spi:target=AP -w <filename>`
-   * Where `<filename>` is the name of your backup file, UEFI firmware file, or shellball firmware file. This will usually take 3-5 mins to complete; flashrom will first read the flash chip, determine which sectors differ, erase those sectors, write the new data, then verify the data written. The initial CCD setup make take a minute or so and not show any progress.
+    * For Intel-based ChromeOS devices, flash using
+      * `sudo flashrom -p raiden_debug_spi:target=AP -w <filename> --ifd -i bios`
+    * For all other devices, use
+      * `sudo flashrom -p raiden_debug_spi:target=AP -w <filename>`
+
+    Where `<filename>` is the name of your backup file, UEFI firmware file, or shellball firmware file. This will usually take 3-5 mins to complete; flashrom will first read the flash chip, determine which sectors differ, erase those sectors, write the new data, then verify the data written. The initial CCD setup make take a minute or so and not show any progress.
 
 ### Clean Up
 
 Once flashing is complete, disconnect the Suzy-Q cable. If the internal battery was not disconnected, the device will likely reboot as soon as flashing has completed. If the internal battery was disconnected, reconnect it and replace the bottom cover/keyboard. Flip over the device, connect external power, press the power button, and cross your fingers :)
-
----
-
-Adapted from <a href="https://wiki.mrchromebox.tech/Unbricking">https://wiki.mrchromebox.tech/Unbricking</a>

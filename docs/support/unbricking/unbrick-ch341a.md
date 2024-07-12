@@ -115,27 +115,23 @@ Now the firmware image is ready to be flashed, and will maintain the device's un
 Now that everything is prepped, time to flash the device. To be thorough, we'll perform a 2nd verification after flashing to ensure the integrity of the flashed firmware.
 
 1. Flash the firmware:
-    * If flashing your own backup created by the Firmware Utility Script (or any backup made from a live system), use
-      * `sudo flashrom -p ch341a_spi --ifd -i bios -w <filename>`
-    * Otherwise use
-      * `sudo flashrom -p ch341a_spi -w <filename>`
+    * For Intel-based ChromeOS devices, flash using
+      * `sudo flashrom -p raiden_debug_spi:target=AP -w <filename> --ifd -i bios`
+    * For all other devices, use
+      * `sudo flashrom -p raiden_debug_spi:target=AP -w <filename>`
 
-    Where \<filename\> is the name of your backup file, UEFI firmware file, or shellball firmware file. This will usually take 30s-90s to complete; flashrom will first read the flash chip, determine which sectors differ, erase those sectors, write the new data, then verify the data written.
+    Where `<filename\>` is the name of your backup file, UEFI firmware file, or shellball firmware file. This will usually take 30s-90s to complete; flashrom will first read the flash chip, determine which sectors differ, erase those sectors, write the new data, then verify the data written.
 
 2. Verify the firmware
 
 Even though flashrom does this as part of the write process, verifying the entire flash chip is quick and an easy way to ensure everything went as it should:
 
-* As before, if flashing your own backup created by the Firmware Utility Script (or any backup made from a live system), use
-  * `sudo flashrom -p ch341a_spi --ifd -i bios -v <filename>`
-* Otherwise, use
-  * `sudo flashrom -p ch341a_spi -v <filename>`
-  * Using the same filename as before. If the verification passes, then disconnect the CH341a from the host machine, and then remove the chip clip.
+    * As before, if flashing an Intel-based device, use
+      * `sudo flashrom -p ch341a_spi -v <filename> --ifd -i bios`
+    * Otherwise, use
+      * `sudo flashrom -p ch341a_spi -v <filename>`
+      * Using the same filename as before. If the verification passes, then disconnect the CH341a from the host machine, and then remove the chip clip.
 
 ### Clean Up
 
 Reassembly is the reverse of disassembly. Reconnect the internal battery and replace the bottom cover/keyboard. Flip over the device, connect external power, press the power button, and cross your fingers :)
-
----
-
-Adapted from <a href="https://wiki.mrchromebox.tech/Unbricking">https://wiki.mrchromebox.tech/Unbricking</a>

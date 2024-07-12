@@ -636,7 +636,7 @@
                     "HP Chromebox G2"
                 ],
                 "boardname": "KENCH",
-                "wpMethod": "<a href=\"https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html\" title=\"Firmware Write Protect\">CR50</a>, <a rel=\"nofollow noopener noreferrer\" class=\"external text\" href=\"https://kodi.wiki/view/Archive:Chromebox#Disable_Firmware_Write_Protect\" target=\"_blank\">screw</a>"
+                "wpMethod": "<a href=\"https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html\" title=\"Firmware Write Protect\">CR50</a>, <a href=\"/images/wp/fizz_wp.jpg\" class=\"internal\" title=\"fizz wp.jpg\" target=\"_blank\">screw</a>"
             },
             {
                 "device": [

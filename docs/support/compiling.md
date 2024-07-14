@@ -14,7 +14,7 @@ Building and flashing your own firmware has the potential to brick your device. 
 
 3. **Clone the submodules:**
    * `cd coreboot`
-   * `git submodule update --init --checkout`
+   * `git submodule update --init --checkout --recursive`
 
 4. **Build the coreboot toolchain**
    * `make crossgcc-i386 CPUS=$(nproc)`

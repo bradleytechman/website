@@ -1388,13 +1388,15 @@
                 "device": [
                     "HP Chromebook 15a-na0"
                 ],
-                "boardname": "LANDRID"
+                "boardname": "LANDRID",
+                "wpMethod": "<a href=\"https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html\" title=\"Firmware Write Protect\">CR50</a>, <a href=\"/images/wp/Landrid_wp.jpg\" class=\"internal\" title=\"Landrid wp.jpg\" target=\"_blank\">jumper</a>"
             },
             {
                 "device": [
                     "HP Chromebook 14a-na1"
                 ],
-                "boardname": "LANTIS"
+                "boardname": "LANTIS",
+                "wpMethod": "<a href=\"https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html\" title=\"Firmware Write Protect\">CR50</a>, <a href=\"/images/wp/Lantis_wp.jpg\" class=\"internal\" title=\"Lantis wp.jpg\" target=\"_blank\">jumper</a>"
             },
             {
                 "device": [

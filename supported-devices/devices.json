@@ -1698,7 +1698,7 @@
         ]
     },
     "Intel Alderlake-N": {
-        "default_wpmethod": "<a href=\"https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html\" title=\"Firmware Write Protect\">CR50</a>",
+        "default_wpmethod": "<a href=\"https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html\" title=\"Firmware Write Protect\">CR50/Ti50</a>",
         "default_rwLegacy": true,
         "default_fullrom": true,
         "devices": [
@@ -2005,7 +2005,7 @@
         ]
     },
     "AMD Mendocino": {
-        "default_wpmethod": "<a href=\"https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html\" title=\"Firmware Write Protect\">CR50</a>, jumper",
+        "default_wpmethod": "<a href=\"https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html\" title=\"Firmware Write Protect\">CR50/Ti50</a>, jumper",
         "default_rwLegacy": true,
         "default_fullrom": true,
         "devices": [

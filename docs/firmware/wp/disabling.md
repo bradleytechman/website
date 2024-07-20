@@ -100,7 +100,7 @@ For more info, see the [Chromium documentation](https://www.chromium.org/chromiu
 ## Disabling Software Write Protection
 
 ::: warning IMPORTANT
-If using MrChromebox's Firmware Utility Script to flash the firmware or set the GBB flags on your device, it is not necessary (nor recommended) to manually disable the software write protection. The Firmware Utility Script will automatically disable/clear/set/enable the software write protection as required. The information below is provided purely for completeness / understanding of what the Firmware Utility Script does under the hood.
+If using the Firmware Utility Script to flash the firmware or set the GBB flags on your device, it is not necessary (nor recommended) to manually disable the software write protection. The Firmware Utility Script will automatically disable/clear/set/enable the software write protection as required. The information below is provided purely for completeness / understanding of what the Firmware Utility Script does under the hood.
 :::
 
 (read: you don't ever need to do this)

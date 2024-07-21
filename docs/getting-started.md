@@ -25,6 +25,22 @@ It cannot be stressed enough: **This is NOT a one click procedure**. Modifying y
 Following a Youtube video or blog post with "simplified" instructions will only end in tears.
 :::
 
+## What's the TL;DR?
+
+If you want to wipe ChromeOS form your device and replace it with Linux or Windows:
+
+* Put your device in [Developer Mode](developer.md)
+* Disable the device's **hardware** [firmware write protection](firmware/wp/index.md)
+    (via screw, jumper, battery, or CCD)
+* Run the [Firmware Utility Script](fwscript.md)
+* Flash the [UEFI Full ROM Firmware](firmware/types.md)
+* Reboot
+* Boot and install your new OS
+
+::: warning
+Again, I cannot stress it enough: flashing your device's firmware and changing the OS is not a simple or minor procedure. If you don't fully read and understand the process and what the tools you're using are doing, it's going to be very hard to troubleshoot if something goes wrong. The documentation here is dense for a reason.
+:::
+
 ## Asking for help properly
 
 If you are facing a issue, please read the [FAQ](faq.md) first.

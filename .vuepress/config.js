@@ -133,6 +133,10 @@ export default defineUserConfig ({
             text: 'Updating Firmware',
             link: '/docs/firmware/updating-firmware'
           },
+          {
+            text: 'Booting Your OS',
+            link: '/docs/firmware/booting'
+          },
         ]
       },
       {

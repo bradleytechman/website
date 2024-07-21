@@ -9,7 +9,7 @@
     *   Carries zero risk of bricking the device
     *   On many models, includes bugfixes and enables additional functionality
     
-    The **RW_LEGACY** firmware is for users who want to dual-boot ChromeOS + Linux, or users who want to run Linux without having to open the device/disable the firmware write-protect (and are ok with the accompanying limitations).
+**RW_LEGACY** firmware is for users who want to dual-boot ChromeOS + Linux, or users who want to run Linux without having to open the device/disable the firmware write-protect (and are ok with the accompanying limitations).
     
   
 ##   **BOOT_STUB** (now deprecated; listed for historical purposes only)
@@ -25,12 +25,12 @@
         *   TL;DR - be careful not to do it :)
     *   Was a stop-gap solution for Baytrail devices, which for a long time didn't have a Full ROM firmware available
     
-    The **BOOT_STUB** firmware was originally an option for some platforms which lacked UEFI (Full ROM) firmware support, but it's no longer needed and support for it has been dropped).
+**BOOT_STUB** firmware was originally an option for some platforms which lacked UEFI (Full ROM) firmware support, but it's no longer needed and support for it has been dropped).
     
   
 ##   **(UEFI) Full ROM**
     
-    *   A complete firmware image which includes updated/customized versions of the hardware init component (coreboot) and UEFI boot payload (Tianocore); Chromeboxes have the option of a Legacy Boot (SeaBIOS) firmware also, since some specialized Linux distros run on them are not yet UEFI compatible (e.g., roon)
+    *   A complete firmware image which includes updated/customized versions of the hardware init component (coreboot) and UEFI boot payload (edk2/Tianocore)
     *   Removes the developer mode boot (white "OS verification is OFF") screen
     *   Completely removes the ability to run ChromeOS (and ChromeOS Recovery Mode), creating a small risk of bricking your device
     *   Offers the best support for booting all OSes besides ChromeOS
@@ -40,7 +40,7 @@
     *   Requires installation of a UEFI-compatible OS after flashing
     *   Essentially turns your ChromeOS device into a "regular" PC / laptop
     
-    The **(UEFI) Full ROM** firmware is the best option for all users who no longer need/want to run ChromeOS (ie, want to run Linux/Windows exclusively), and who don't mind opening their device to disable the firmware write-protect.
+The **(UEFI) Full ROM** firmware is the best option for all users who no longer need/want to run ChromeOS (ie, want to run Linux/Windows exclusively), and who don't mind opening their device to disable the firmware write-protect.
     
 
   

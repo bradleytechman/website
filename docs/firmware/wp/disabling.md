@@ -97,6 +97,52 @@ On 2023+ ChromeOS devices using a Gen2 CR50 security chip (aka `Ti50`), there is
 For more info, see the [Chromium documentation](https://www.chromium.org/chromium-os/developer-library/guides/device/ro-firmware-unlock/) on this feature.
 
 
+::: tip NOTE
+If you disabled firmware WP via CCD and reset your CCD flags with `ccd reset factory` (as per the instructions above), you can skip this step, as `ccd reset factory` will set ` AllowUnverifiedRo` to `always`.
+:::
+
+### Step 1: Verify the device has a Ti50
+
+1. Open VT-2 terminal: press `[CTRL+ALT+F2]` (F2 is the right arrow or refresh key).
+2. Login as `root`.
+3. Run `gsctool -a -I | grep AllowUnverifiedRo`.
+4. If that command has any output, your device has a Ti50. If you get no output or an error, your device either has a Cr50 or no GSC at all.
+
+### Step 2: Disable RO verification
+
+1. Unlock the GSC by running `gsctool -a -o`.
+2. Run `gsctool -a -I AllowUnverifiedRo:always`.
+3. Press the power button when prompted.
+
+::: warning
+If your device has a Ti50 and you don't disable RO verification, flashing full rom will (temporarily) brick the device - see recovery info below.
+:::
+
+### Recovering a device bricked due to RO verification
+
+#### Chromebooks
+
+1. Press and hold the `Power` button.
+2. Press `[F2]` twice.
+3. Release the `Power` button.
+4. Repeat the above steps a second time.
+
+#### Chromeboxes
+
+1. Press and hold the `Power` button.
+2. Press the recovery pinhole button twice.
+3. Release the `Power` button.
+4. Repeat the above steps a second time.
+
+#### Tablets
+
+1. Press and hold the `Power` button.
+2. Press and hold `Volume Up` for 10+ seconds. Release and repeat it a second time.
+3. Release the `Power` button.
+4. Repeat the above steps a second time.
+
+Performing these steps will disable RO verification for 15 minutes, allowing you to permanently disable it.
+
 ## Disabling Software Write Protection
 
 ::: warning IMPORTANT

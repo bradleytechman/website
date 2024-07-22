@@ -26,11 +26,11 @@ The firmware updates available via this site are designed to meet the needs of t
 
 Firmware related issues and feature requests are best handled via the [firmware issue tracker](https://github.com/MrChromebox/firmware/issues).
 
-Commerical entities looking for a custom firmware solution for their ChromeOS device(s) should just [email me directly](mailto: MrChromebox@gmail.com)
+Commerical entities looking for a custom firmware solution for their ChromeOS device(s) should just [email me directly](mailto:MrChromebox@gmail.com)
 
 
 ## Unbricking Service
 
-If you've taken a wrong turn somehow and, despite the safeguards in the Firmware Utility Script, ended up with a bricked device (whether from my firmware or someone else's), and are unable to recover the device yourself, MrChromebox offers a low-cost unbricking service to anyone in the USA (or anyone who cares to cover shipping to/from really). Simply [shoot me an email](mailto: mr.chromebox@gmail.com) and we can go from there. With any luck, it might not even be bricked :)
+If you've taken a wrong turn somehow and, despite the safeguards in the Firmware Utility Script, ended up with a bricked device (whether from my firmware or someone else's), and are unable to recover the device yourself, MrChromebox offers a low-cost unbricking service to anyone in the USA (or anyone who cares to cover shipping to/from really). Simply [shoot me an email](mailto:MrChromebox@gmail.com) and we can go from there. With any luck, it might not even be bricked :)
 
 If your device is bricked, many times it is fairly easy to recover - see [Unbricking](/docs/support/unbricking/index.md)

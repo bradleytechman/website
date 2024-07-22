@@ -1,7 +1,7 @@
 # Getting Started
 
 ::: danger
-You are about to make **unsupported** changes to your device that will in many cases **void any warranty**. MrChromebox firmware and utilities are provided **as-is, without any guarantee**.
+You are about to make **unsupported** changes to your device that will in many cases **void your warranty**. MrChromebox firmware and utilities are provided **as-is, without any guarantee**.
 Any and all changes are made **at your own risk**!
 :::
 
@@ -27,8 +27,27 @@ Following a Youtube video or blog post with "simplified" instructions will only 
 
 ## What's the TL;DR?
 
+### Dual Booting via RW_LEGACY firmware
+
+If you want to dual boot ChromeOS and Linux on your device:
+
+* Verify your device has [RW_LEGACY support](/docs/suppported-devices.md)
+* Put your device in [Developer Mode](developer.md)
+* Run the [Firmware Utility Script](fwscript.md)
+* Flash the [RW_LEGACY Firmware](firmware/types.md)
+* Reboot
+* Press `[CTRL+L]` to boot in legacy boot mode / to the AltFw menu
+* Boot and install your new OS
+
+::: tip NOTE
+Installing Linux on the internal storage along with ChromeOS requires repartitiong the device using tools which can handle ChromeOS partition types; see the [Chrultrabook docs](https://docs.chrultrabook.com) for more info.
+:::
+
+### Replacing ChromeOS via Full ROM firmware
+
 If you want to wipe ChromeOS form your device and replace it with Linux or Windows:
 
+* Verify your device has [UEFI Full ROM support](/docs/suppported-devices.md)
 * Put your device in [Developer Mode](developer.md)
 * Disable the device's **hardware** [firmware write protection](firmware/wp/index.md)
     (via screw, jumper, battery, or CCD)

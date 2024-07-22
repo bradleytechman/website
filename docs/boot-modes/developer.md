@@ -13,7 +13,15 @@ Because Developer Mode is inherently less secure than Verified Boot Mode, as a w
 
 <p align="center"> <img src="/images/cros_dev_mode.jpg" alt="Developer Mode boot screen" width="500"/></p>
 
-The Developer Mode boot screen will show for 30 seconds, then beep and boot into ChromeOS (by default). You can bypass this timeout by pressing `[CTRL+D]` to boot into ChromeOS, or `[CTRL+L]` to boot in legacy mode/to the Alternate Bootloader Menu if available. The length of the timeout (2s or 30s) and the default boot target (ChromeOS or Legacy Boot Mode) can be changed by setting the firmware boot flags (aka GBB flags).
+Devices in ChromeOS Developer Mode will show a warning screen on every boot. The screen will time out after 30 seconds, playing a warning beep.
+
+From the Developer Mode boot screen, the following keyboard shortcuts are available:
+
+* `[CTRL+D]`: Boot ChromeOS from the internal disk
+* `[CTRL+U]`: Boot ChromeOS from an external USB stick or SD card (**for ChromeOS developers only**)
+* `[CTRL+L]`: Boot the Legacy Boot payload (SeaBIOS) or show the Alternative Bootloader Menu
+
+By default, after the timeout ChromeOS will boot from internal storage if no option is selected. The length of the timeout (2s or 30s) and the default boot target (ChromeOS or Legacy Boot Mode) can be changed by setting the firmware boot flags (aka GBB flags).
 
 **Note:** the easiest way to set the firmware boot flags is via the [ChromeOS Firmware Utility Script](docs/fwscript); it presents users with the option to set the boot timeout and boot target without having to know which flags to set / what values to use.
 

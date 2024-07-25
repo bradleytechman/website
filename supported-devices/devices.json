@@ -1433,7 +1433,8 @@
                 "device": [
                     "Acer Chromebook 315 [CB315-4H/4HT]"
                 ],
-                "boardname": "MAGMA"
+                "boardname": "MAGMA",
+                "wpMethod": "<a href=\"https://docs.mrchromebox.tech/docs/firmware/wp/disabling.html\" title=\"Firmware Write Protect\">CR50</a>, <a href=\"/images/wp/magma_wp_jumper.jpg\" class=\"internal\" title=\"magma_wp_jumper\" target=\"_blank\">jumper</a>"
             },
             {
                 "device": [

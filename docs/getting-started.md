@@ -32,7 +32,7 @@ Following a Youtube video or blog post with "simplified" instructions will only 
 If you want to dual boot ChromeOS and Linux on your device:
 
 * Verify your device has [RW_LEGACY support](/docs/supported-devices.md)
-* Put your device in [Developer Mode](/boot-modes/developer.md)
+* Put your device in [Developer Mode](/docs/boot-modes/developer.md)
 * Run the [Firmware Utility Script](fwscript.md)
 * Flash the [RW_LEGACY Firmware](firmware/types.md)
 * Reboot
